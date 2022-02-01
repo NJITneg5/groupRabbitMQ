@@ -11,7 +11,7 @@ if (isset($argv[1]))
 }
 else
 {
-  $msg = "test message";
+  $msg = "This is a test message from Nick or Anthony going through Bryon's Queue to Nate's Server.";
 }
 
 $request = array();
@@ -22,7 +22,7 @@ $request['message'] = $msg;
 $response = $client->send_request($request);
 //$response = $client->publish($request);
 
-echo "client received response: ".PHP_EOL;
+echo " Group client received response: ".PHP_EOL;
 print_r($response);
 echo "\n\n";
 
